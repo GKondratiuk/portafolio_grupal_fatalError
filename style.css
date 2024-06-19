@@ -1,0 +1,227 @@
+:root{
+  --body-bg-color: rgb(43,43,70);
+  --text-color: white;
+  --colorh1-color: rgb(215,211,211);
+  --fondo-proyectos: rgb(60,43,70);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(26, 24, 46);
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div h1{
+    color: rgb(188, 188, 188);
+}
+
+header img{
+    width: 10vw;
+    border-radius: 120px;
+    
+}
+
+  nav {
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  main h1{
+    color: rgb(202, 202, 202);
+  }
+  article{
+    display: flex;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  article h2{
+    color: aliceblue;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .experiencia, .estudios {
+    display: flex;
+    flex-direction: column;
+    color: rgb(251, 251, 251);
+  }
+
+  .container-experiencia, .container-estudios{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 2.5rem;
+    font-size: 1.5;
+    margin-left: 2rem;
+  }
+
+
+  /* Estilo para el footer */
+  footer {
+    background-color: rgb(40, 40, 54);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Estilo para el contenido dentro del footer */
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color:#333;
+  }
+  
+  /* Estilo para el párrafo dentro del footer */
+  footer p {
+    margin: 0;
+  }
+
+  .container img {
+
+display: center;
+width: 70%;
+height: 20%;
+
+  }
+
+  .container {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #fffdfd;
+}
+
+
+  .sobremi{
+    display: flex;
+    justify-content: center; /*esto centra el elemento*/   
+  }
+
+  .container-sobremi{
+    display: flex;
+    width: 50%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size: large;
+    color: azure;
+  }
+
+  /*Media queries Agrupadas*/
+  /*pantalla para celus chicos hasta 767px*/
+  
+  @media (max-width: 767px){
+    .titulo{
+      justify-content: center;
+    }
+    .navigation{
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    header nav ul{
+      display: flex;
+      flex-direction: column;
+      }
+    .container-sobremi{
+      width: 100%;
+      padding: 1;
+      margin-top: 1rem; /* margen de arriba*/
+      line-height: 2.5rem; /* espacio entre los parrfos del texto*/
+      font-size: small; /*tamaño de fuente */     
+    }
+    /*Agregando el responsivo de las secciones experiencia y estudios*/
+    .container-experiencia, .container-estudios{
+      width: 100%;
+      margin: 0rem;
+    }
+    /*Agregamos el responsivo de las secciones experiencia y estudio*/
+    .experiencia, .estudios{
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: small;
+    }
+    
+    /*Configuracion de resolucion para tablets entre 768px y 1023px*/
+    @media (max-width: 768px) and (max-width: 1023px) {
+      .titulo{
+        justify-content: center;
+      }
+      .navigation{
+        gap: 2rem;
+        justify-content: center;
+      }
+      .estudios, .experiencia{
+        width: 75%;
+      }
+    }
+    /* escritorios: para pantallas anchas 1024 y superiores */ 
+    @media (max-width: 1024px)  {
+      .titulo {
+        justify-content: flex-start;
+    }
+    .navigation {
+      gap: 3em;
+      justify-content: flex-end;
+      margin: 3em;
+    }
+    /* Agregamos el responsivo de las secciones experiencia y estudios*/
+    .estudios, .experiencia{
+      width: 75%;
+    }
+  }
+  
+}
